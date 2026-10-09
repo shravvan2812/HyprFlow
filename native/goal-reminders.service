@@ -1,0 +1,12 @@
+[Unit]
+Description=Goal & Habit Daily Reminder Daemon for Mako (100% Offline)
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env python3 %h/Projects/goal-manager/native/goals.py notify
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

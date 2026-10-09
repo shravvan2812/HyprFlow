@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="hyprGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background with rounded Arch/Hyprland window aesthetic -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" stroke="url(#hyprGrad)" stroke-width="8"/>
+  <!-- Arch logo silhouette inspiration with vibrant Hyprland geometry -->
+  <g filter="url(#neonGlow)">
+    <!-- Main Arch/Apex Peak -->
+    <path d="M256 96 L376 360 L316 360 L288 300 L224 300 L196 360 L136 360 Z" fill="none" stroke="url(#hyprGrad)" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Checkmark cross-beam productivity symbol -->
+    <path d="M210 240 L245 275 L315 205" fill="none" stroke="#10b981" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Dots representing tiling workspaces -->
+  <circle cx="170" cy="420" r="10" fill="#06b6d4" />
+  <circle cx="212" cy="420" r="10" fill="#8b5cf6" />
+  <circle cx="256" cy="420" r="14" fill="#f43f5e" />
+  <circle cx="300" cy="420" r="10" fill="#10b981" />
+  <circle cx="342" cy="420" r="10" fill="#f59e0b" />
+</svg>

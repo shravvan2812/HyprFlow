@@ -1,0 +1,10 @@
+[Unit]
+Description=Check Daily Goal & Habit Reminders every minute
+After=graphical-session.target
+
+[Timer]
+OnCalendar=*:0/1
+Persistent=true
+
+[Install]
+WantedBy=timers.target

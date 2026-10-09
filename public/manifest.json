@@ -1,0 +1,36 @@
+{
+  "id": "/",
+  "name": "Goals & Habits",
+  "short_name": "Goals",
+  "description": "Minimalist monochrome personal goal and daily habit manager with Mako notifications and pure local storage.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0f17",
+  "theme_color": "#0f141c",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick Add Task",
+      "short_name": "Quick Add",
+      "description": "Instantly capture a task into HyprFlow",
+      "url": "/?action=quick_add",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Focus Widget",
+      "short_name": "Widget",
+      "description": "Open floating quick access desklet widget",
+      "url": "/?view=widget",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    }
+  ]
+}

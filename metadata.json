@@ -1,0 +1,6 @@
+{
+  "name": "ZenGoal - Minimalist Personal Goal & Habit Manager",
+  "description": "Pure personal local-storage goal manager for defining single or multiple goals with actionable sub-goals and daily habit reminders in a minimal, clean interface.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
